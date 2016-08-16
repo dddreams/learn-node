@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Log in</h2>
+	<form action="/login" method="post">
+		userName: <input type="text" name="userName"><br><br>
+		password: <input type="password" name="password"><br><br>
+		<input type="submit" value="Log in">
+	</form>
+	
+	<h2>Upload</h2>
+	<form action="/upload" method="post" enctype="multipart/form-data">
+		<input type="text" name="fileName" ><br><br>
+		<input type="file" name="upload" multiple="multiple"><br><br>
+		<input type="submit" value="Upload">
+	</form>
+</body>
+</html>
